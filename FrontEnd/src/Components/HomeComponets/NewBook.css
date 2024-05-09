@@ -1,0 +1,89 @@
+
+
+.book_Container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px 20px;
+    
+}
+
+.book_Container .card{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 270px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 35px 80px rgba(0,0,0,0,1.5);
+    transition: 0.5s;
+
+}
+
+.book_Container .card:hover{
+    height: 370px;
+}
+
+.book_Container .card .Imgbox{
+    position: absolute;
+    top: 15px;
+    width: 270px;
+    height: 200px;
+    background: #333;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+}
+
+.book_Container .card:hover .Imgbox{
+    top: -70px;
+    scale: 0.75;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.2);
+}
+
+.book_Container .card .Imgbox img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.book_Container .card .content{
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    padding: 0 30px;
+    top: 220px;
+    height: 30px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.book_Container .card:hover .content{
+    top: 120px;
+    height: 220px;
+}
+
+.book_Container .card .content a{
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: black;
+    border: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 18px;
+    color: white;
+    transition: 0.5s;
+}
+
+.book_Container .card .content a:hover{
+    background-color: rgb(169, 76, 255);
+    color: black;
+}
