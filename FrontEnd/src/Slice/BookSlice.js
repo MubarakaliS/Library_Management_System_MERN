@@ -8,7 +8,7 @@ const initialState = {
     searchISBN: '',
     searchBookTitle:'',
 }
-const BASE_URI = 'http://localhost:4000/api/books'
+const BASE_URI = 'https://library-management-system-mern-krp1.onrender.com/api/books'
 //GET
 export const getBookFromServer = createAsyncThunk(
     "books/getBookFromServer",

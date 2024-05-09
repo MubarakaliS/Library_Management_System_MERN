@@ -5,7 +5,7 @@ const initialState = {
     isLoading: false,
     error: ''
 }
-const BASE_URI = 'http://localhost:4000/api/admin'
+const BASE_URI = 'https://library-management-system-mern-krp1.onrender.com/api/admin'
 //GET
 export const getAdminFromServer = createAsyncThunk(
     "admin/getAdminFromServer",
