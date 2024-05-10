@@ -66,7 +66,7 @@ const adminSignIn = async (req, res) => {
     }
 };
 const getAdminId = async (req, res) => {
-    console.log(req.adminId);
+
     try {
         const admin = await adminLoginModel.find({});
         res.status(200).json(admin);
@@ -79,7 +79,7 @@ const getAdminId = async (req, res) => {
 
 const createNewAdmin = async (req, res) => {
     try {
-    console.log(req.adminId)
+
     const { adminEmail, password, adminName } = req.body;
 
     // // Check if required fields are present in the request body

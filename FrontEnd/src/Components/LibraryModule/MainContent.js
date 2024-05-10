@@ -23,7 +23,7 @@ const MainContent = () => {
     // Ensure adminDetail is not null or undefined before accessing properties
     const adminEmail = adminDetail ? adminDetail.admin.adminEmail : '';
     const adminName = adminDetail ? adminDetail.admin.adminName : '';
-    console.log(adminEmail);
+    // console.log(adminEmail);
     return (
         <>
             <section className="fdb-block">

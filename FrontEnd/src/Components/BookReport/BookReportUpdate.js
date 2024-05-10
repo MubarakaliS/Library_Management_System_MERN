@@ -21,7 +21,7 @@ const BookReportUpdate = (props) => {
 
   const updateBook = () => {
     props.onHide();
-    console.log("updated");
+    // console.log("updated");
     // console.log("Book image",bookImage)
     dispatch(
       updateBookInServer({

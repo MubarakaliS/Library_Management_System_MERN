@@ -16,7 +16,7 @@ const UserLogin = (props) => {
     }, [dispatch])
     const handleLogin = async (e) => {
         e.preventDefault(); // Use e instead of data
-        console.log(e);
+        // console.log(e);
         const userValidEmail = userList.find((user) => user.email === userEmail)
         const userValidRegisterNo = userList.find((user) => user.registerNo === userRegisterNo)
 

@@ -41,7 +41,7 @@ const AddStudentForm = () => {
                 .required("Register Number is required")
         }),
         onSubmit: (addStudentData) => {
-            console.log("Form data", addStudentData)
+            // console.log("Form data", addStudentData)
             
                 const formData = new FormData();
                 formData.append('studentName', addStudentData.studentName);
@@ -50,7 +50,7 @@ const AddStudentForm = () => {
                 formData.append('mobileNumber', mobileNumber)
                 formData.append('registerNo', addStudentData.registerNo)
                 formData.append('userImage',userImage)
-                console.log(userImage)
+                (userImage)
                 dispatch(addUserToServer(formData))
                 toast.success("Success fully book added..");
             

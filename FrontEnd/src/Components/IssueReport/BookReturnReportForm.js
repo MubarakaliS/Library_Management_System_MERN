@@ -22,7 +22,7 @@ const BookIssueReportForm = () => {
   const deleteIssueBook = (book) => {
 
     alert('DELETED THE ISSUE BOOK SUCCESSFULLY');
-    console.log("Delete Book");
+    // console.log("Delete Book");
     const selectedBook = bookList.find((books) => books.isbn === book.isbn);
 
     if (!selectedBook) {

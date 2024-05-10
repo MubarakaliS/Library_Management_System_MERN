@@ -19,7 +19,7 @@ const StudentReportUpdate = (props) => {
     const [id,setId]=useState();
 
     const updateStudent = () => {
-        console.log("Student updated");
+        // console.log("Student updated");
         props.onHide();
         dispatch(updateUserInServer({id,studentName,branch,mobileNumber,photo,email,registerNo}))
     }

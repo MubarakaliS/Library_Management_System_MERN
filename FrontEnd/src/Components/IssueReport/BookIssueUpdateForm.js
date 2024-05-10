@@ -18,7 +18,7 @@ const BookReportUpdate = (props) => {
 
     const updateIssueBook = () => {
         props.onHide();
-        console.log("updated");
+        // console.log("updated");
         dispatch(updateIssueBookInServer({ id, isbn, registerNo, issueDate }))
     }
 

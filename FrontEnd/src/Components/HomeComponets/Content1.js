@@ -3,15 +3,13 @@ import AdminLogin from "../Login/AdminLogin";
 import UserLogin from "../Login/UserLogin";
 import bookImage from "../../Assets/bookHeader.png";
 import headerIcon from "../../Assets/headerIcon.png";
-import Content2 from "./Content2";
 import NewBook from "./NewBook";
-import { useNavigate } from "react-router-dom";
 import AboutHome from "./AboutHome";
 import Faculties from "../Faculties";
 import Footer from "../Footer";
 
 const Content1 = () => {
-  const navigate = useNavigate();
+
   const [modalShow, setModalShow] = useState(false);
   const [userModalShow, setUserModalShow] = useState(false);
   const newBookRef = useRef(null);
@@ -19,17 +17,14 @@ const Content1 = () => {
   const facultiesRef = useRef(null);
   const footerRef = useRef(null);
 
-  const handleMenuClick = (ref) => {
-    ref.current.scrollIntoView({ behavior: "smooth" });
-  };
 
   const Admin = () => {
-    console.log("admin click");
+    // console.log("admin click");
     setModalShow(true);
   };
 
   const User = () => {
-    console.log("User click");
+    // console.log("User click");
     setUserModalShow(true);
   };
 

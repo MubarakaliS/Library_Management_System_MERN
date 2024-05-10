@@ -14,15 +14,15 @@ function Header() {
     const navigate = useNavigate();
     const LibraryMain = () => {
         navigate('/sideBar');
-        console.log("Library");
+        // console.log("Library");
     }
     const Admin = () => {
-        console.log("admin click")
+        // console.log("admin click")
         setModalShow(true)
         // navigate('/adminSignIn')
     }
     const User = () => {
-        console.log("User click")
+        // console.log("User click")
         
         setUserModalShow(true)
         // navigate('/adminSignIn')

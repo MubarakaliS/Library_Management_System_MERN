@@ -22,7 +22,7 @@ const BookIssueReportForm = () => {
   }, [dispatch]);
   const updateIssueBook = (book) => {
     setModalShow(true);
-    console.log("Update Book");
+    // console.log("Update Book");
     dispatch(addSelectedIssueBook(book))
   }
   const getBookDetailsByISBN = (isbn) => {

@@ -21,7 +21,7 @@ const StudentReport = () => {
         dispatch(addSelectedUser(user))
     }
     const deleteUser = (user) => {
-        console.log("Delete Book");
+        // console.log("Delete Book");
         dispatch(deleteUserFromServer(user))
             .unwrap()
             .then(() => {

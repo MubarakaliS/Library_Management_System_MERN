@@ -19,7 +19,7 @@ const AdminLogin = (props) => {
     }, [dispatch])
     const handleLogin = async (e) => {
         e.preventDefault(); // Use e instead of data
-        console.log(e);
+        // console.log(e);
 
         const requestData = {
             adminEmail: adminEmail,

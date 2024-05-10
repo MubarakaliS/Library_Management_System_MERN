@@ -61,7 +61,7 @@ const AddBookForm = () => {
       
     }),
     onSubmit:(addBookData)=>{
-      console.log("Form data",addBookData)
+      // console.log("Form data",addBookData)
       try{
         const formData = new FormData();
         formData.append('title',addBookData.title);
@@ -72,7 +72,7 @@ const AddBookForm = () => {
         formData.append('edition',addBookData.edition)
         formData.append('availableStatus',addBookData.availableStatus)
         formData.append('bookImage',bookImage);
-        console.log(formData)
+        // console.log(formData)
         dispatch(addBookToServer(formData))
         toast.success("Success fully book added..");
 
