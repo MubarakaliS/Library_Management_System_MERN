@@ -22,7 +22,7 @@ const NewBook = () => {
   const lastThreeBooks = bookList.filter(
     (book, index) => index >= startingIndex
   );
-  (lastThreeBooks);
+  // console.log(lastThreeBooks);
   const navigate = useNavigate();
   const readMore = () => {
     navigate("userBookReport");
