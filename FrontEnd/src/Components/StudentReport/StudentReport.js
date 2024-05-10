@@ -60,13 +60,6 @@ const StudentReport = () => {
                 {(error !== "") ? <h2 className=' m-5 text-danger text-center'>{error}</h2> : null}
                 <div className="row d-flex justify-content-between mt-4" >
                     {currentBooks
-                        // .filter((user) => {
-                        //     if (searchTitle === "") {
-                        //         return user;
-                        //     } else if (user.studentName.toLowerCase().includes(searchTitle.toLowerCase())) {
-                        //         return user;
-                        //     }
-                        // }) 
                         .map((user) => (
 
                             <div className="col-xl-3 col-lg-4 col-md-4 col-sm-5 col-xs-10 m-2" key={user._id}>

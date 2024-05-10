@@ -103,18 +103,9 @@ const userSlice = createSlice({
     name: 'userSlice',
     initialState: initialState,
     reducers: {
-        //Synchronousoperations
-        // addBookToList: (state, action) => {
-        //     const _id = Math.random() * 100
-        //     let book = { ...action.payload, _id }
-        //     state.bookList.push(book)
-        // },
         removeUserFromList: (state, action) => {
             state.userList = state.userList.filter((user) => user._id !== action.payload._id)
         },
-        // updateBookInList: (state, action) => {
-        //     state.bookList = state.bookList.map((book) => book._id === action.payload._id ? action.payload : book);
-        // },
 
         addSelectedUser: (state, action) => {
             state.selectedUser = action.payload

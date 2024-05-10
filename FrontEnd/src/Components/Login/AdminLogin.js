@@ -7,7 +7,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 const AdminLogin = (props) => {
-    const { adminList, error } = useSelector((state) => state.admin)
+    const {  error } = useSelector((state) => state.admin)
     const [adminEmail, setAdminEmail] = useState('');
     const [password, setPassword] = useState('');
 

@@ -1,12 +1,8 @@
 import { useState } from "react";
-import Button from "react-bootstrap/Button";
-import Card from "react-bootstrap/Card";
-import { useNavigate } from "react-router-dom";
 import AdminLogin from "./Login/AdminLogin";
 import UserLogin from "./Login/UserLogin";
 
 const Footer = () => {
-  const navigate = useNavigate();
   const [modalShow, setModalShow] = useState(false);
   const [userModalShow, setUserModalShow] = useState(false);
   return (

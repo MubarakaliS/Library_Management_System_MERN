@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import Card from 'react-bootstrap/Card';
 import { getUserFromServer } from '../../Slice/UserSlice';
 import defaultUserImage from '../../Assets/PersonIcon.png';
 

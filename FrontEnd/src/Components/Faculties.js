@@ -1,7 +1,5 @@
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
 import defaultImage from '../Assets/WomenIcon.png'
-import './Faculties.css'
+import '../styles/Faculties.css'
 function Faculties() {
   return (
     <>

@@ -57,20 +57,7 @@ const AddStudentForm = () => {
         }
     })
 
-    const addUser = (e) => {
-        e.preventDefault();
-
-        dispatch(addUserToServer({ studentName, registerNo, branch, userImage, email, mobileNumber }))
-
-
-        // Reset form fields
-        setStudentName('');
-        setBranch('');
-        setMobileNumber('');
-        setUserImage(null);
-        setEmail('');
-        setRegisterNo('');
-    };
+   
     const cancelUser = (e) => {
         e.preventDefault()
         setStudentName('');

@@ -1,7 +1,5 @@
-// App.js
 
 import React, { useState } from 'react';
-import Sidebar from './SideBar';
 import MainContent from './MainContent';
 import { Container, Row, Col } from 'react-bootstrap';
 import SideBarItem from '../../SideNavbar/SideBarItem';
@@ -17,8 +15,6 @@ const LibraryMain = () => {
     <Container fluid>
       <Row>
         <Col>
-          {/* <Sidebar onItemClick={handleItemClick} />
-           */}
            <SideBarItem onItemClick={handleItemClick}/>
         </Col>
         <Col>

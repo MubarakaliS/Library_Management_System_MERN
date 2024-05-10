@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-import axios from 'axios';
 const initialState = {
     issueBookList: [],
     selectedIssueBook: {},
@@ -43,36 +42,6 @@ export const addIssueBookToServer = createAsyncThunk(
         }
     }
 )
-
-// export const addIssueBookToServer = createAsyncThunk(
-//     "issueBooks/addIssueBookToServer",
-//     async (issueBooks, { rejectWithValue }) => {
-//         const options = {
-//             method: 'POST',
-//             body: JSON.stringify(issueBooks),
-//             headers: {
-//                 'Content-type': 'application/json;charset=UTF-8'
-//             }
-//         }
-//         try {
-//             const response = await fetch(BASE_URI, options);
-
-//             if (response.ok) {
-//                 const jsonResponse = await response.json();
-//                 return jsonResponse;
-//             } else {
-//                 throw new Error('Issue Book Not Added');
-//             }
-//         } catch (error) {
-//             // Handle duplicate key error
-//             if (error.message.includes('E11000 duplicate key')) {
-//                 return rejectWithValue({ error: 'Duplicate ISBN. Issue Book Not Added.' });
-//             } else {
-//                 return rejectWithValue({ error: error.message });
-//             }
-//         }
-//     }
-// )
 
 //PATCH
 export const updateIssueBookInServer = createAsyncThunk(

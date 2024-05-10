@@ -6,38 +6,24 @@ import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 import Router from './Components/Router';
 
-import AdminLogin from './Components/Login/AdminLogin';
 
 import { Provider } from 'react-redux';
 import { store } from './Store';
 
-import {ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
-import Navbar from './Navbar';
+
 
 import AOS from 'aos';
 import 'aos/dist/aos.css'; 
 AOS.init();
 
 
-import example from './example';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    {/* <Provider store={store}> */}
-      {/* <Router /> */}
-       {/* <AdminLogin/> */}
-       <example/>
-     {/* </Provider>  */}
-    {/* <Navbar/>
-    <ToastContainer/> */}
-   
-    {/* <App /> */}
-
-    {/* <SideBarItemUser/> */}
-    {/* <UserAccount/> */}
-    {/* <BookIssueReportForm/> */}
-    {/* <BookIssueForm/> */}
+    <Provider store={store}>
+      <Router />
+     </Provider> 
   </React.StrictMode>
 );
 

@@ -285,7 +285,7 @@ body {
 .pl-1{
     height: 100%;
     width: 100%;
-    background-image: url(./Assets/pexels-photo-9455601\ \(1\).jpeg);
+    background-image: url(../Assets/pexels-photo-9455601\ \(1\).jpeg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -312,7 +312,7 @@ body {
 .pl-2{
     height: 100%;
     width: 100%;
-    background-image: url(./Assets/Parralex2.jpg);
+    background-image: url(../Assets/Parralex2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;

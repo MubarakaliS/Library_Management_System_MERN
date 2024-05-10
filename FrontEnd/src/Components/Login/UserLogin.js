@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react';
 import Modal from 'react-bootstrap/Modal';
-import Button from 'react-bootstrap/Button';
 import { getUserFromServer } from '../../Slice/UserSlice';
 import { useDispatch, useSelector } from 'react-redux';
-import { Navigate, useNavigate } from 'react-router-dom';
-import axios from 'axios';
+import {  useNavigate } from 'react-router-dom';
+
 
 const UserLogin = (props) => {
-    const { userList, error } = useSelector((state) => state.users)
+    const { userList } = useSelector((state) => state.users)
     const [userEmail, setUserEmail] = useState()
     const [userRegisterNo, setUserRegisterNo] = useState()
     const dispatch = useDispatch()

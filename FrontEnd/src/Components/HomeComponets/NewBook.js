@@ -1,18 +1,15 @@
 import React, { useEffect } from "react";
-
 import defaultImage from "../../Assets/Card.jpg";
 import NewSticker from "../../Assets/NewSticker.png";
 import "./NewBook.css";
 import { useDispatch, useSelector } from "react-redux";
 import { getBookFromServer } from "../../Slice/BookSlice";
-import UserLogin from "../Login/UserLogin";
 import { useNavigate } from "react-router-dom";
 const NewBook = () => {
   const { bookList } = useSelector((state) => state.books);
 
   const dispatch = useDispatch();
-  // const latestBook=bookList.slice(-3);
-  // console.log(latestBook)
+
   useEffect(
     () => {
       dispatch(getBookFromServer());

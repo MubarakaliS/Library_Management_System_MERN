@@ -4,6 +4,10 @@
    transition: 0.5s;
    /* margin-top: 10px; */
 }
+.nav-pills li a:active{
+    background-color:#FF9800;
+    color:white;
+}
 .nav-pills li a:hover{
     background-color:#FF9800;
     color:white;

@@ -1,11 +1,9 @@
 import React, { useEffect } from 'react'
-import './SideNav.css'
+import '../styles/SideNav.css'
 import {getAdminFromServer } from '../Slice/AdminSlice';
-import { Navigate, useNavigate } from 'react-router-dom';
-import { Card } from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
+import {  useNavigate } from 'react-router-dom';
+import { useDispatch } from 'react-redux';
 const SideBarItem = ({ onItemClick }) => {
-    const { adminList, error } = useSelector((state) => state.admin)
     const navigate = useNavigate();
     const dispatch=useDispatch();
     useEffect(() => {
@@ -98,31 +96,7 @@ const SideBarItem = ({ onItemClick }) => {
                     </ul>
 
                 </div>
-                {/* / */}
-                {/* <div className='col'>
-
-                    <Card className='mt-5 mx-auto' style={{ maxWidth: '30rem' }}>
-                        <Card.Body className='d-flex flex-column justify-content-around'>
-                            <Card.Title className='text-center'>Welcome Admin Name</Card.Title>
-                            <br></br>
-                            <div
-                                className='mx-auto'
-                                style={{
-                                    width: '150px',
-                                    height: '150px',
-                                    borderRadius: '50%',
-                                    // backgroundColor: 'blue',
-                                    backgroundImage: 'url(../Assets/Card.jpg)',
-                                    backgroundSize: 'cover',
-                                    textAlign: 'center'
-                                }}
-                            ></div>
-                            <br></br>
-                            <Card.Text className='mx-5'>Password: __________</Card.Text>
-                            <Card.Text className='mx-5'>Email ID: ______________</Card.Text>
-                        </Card.Body>
-                    </Card>
-                </div> */}
+               
             </div>
         </div>
     )

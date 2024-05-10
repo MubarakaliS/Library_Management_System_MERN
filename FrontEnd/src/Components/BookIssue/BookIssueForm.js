@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react'
 import { Form, Button, Row, Col } from 'react-bootstrap';
 
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchBookByISBN, updateSearchISBN, getBookFromServer, updateIssueBookInServer } from '../../Slice/BookSlice';
+import { fetchBookByISBN, getBookFromServer, updateIssueBookInServer } from '../../Slice/BookSlice';
 
 import { addIssueBookToServer } from '../../Slice/IssueBookSlice';
 import defaultBookImage from '../../Assets/Card.jpg';
@@ -14,7 +14,7 @@ const BookIssueForm = () => {
 
     const dispatch = useDispatch();
     const { bookList, isLoading, error, searchISBN } = useSelector((state) => state.books);
-    const { users } = useSelector((state) => state); // Assuming users state has register number and other user details
+    // const { users } = useSelector((state) => state); // Assuming users state has register number and other user details
 
     useEffect(() => {
         if (searchISBN) {

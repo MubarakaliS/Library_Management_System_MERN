@@ -4,13 +4,10 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Sidebar from './LibraryModule/SideBar';
-import LibraryMain from './LibraryModule/LibraryMain';
-import { Navigate, useNavigate } from 'react-router-dom';
+import {  useNavigate } from 'react-router-dom';
 import AdminLogin from './Login/AdminLogin';
-import { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
-import { getAdminFromServer } from '../Slice/AdminSlice';
+import {  useState } from 'react';
+
 import UserLogin from './Login/UserLogin';
 
 function Header() {
@@ -62,12 +59,6 @@ function Header() {
                             </Nav.Link>
                         </Nav>
                         <Form className="d-flex">
-                            {/* <Form.Control
-                                type="search"
-                                placeholder="Search"
-                                className="me-2"
-                                aria-label="Search"
-                            /> */}
                             <Button variant="outline-success">Search</Button>
                         </Form>
                     </Navbar.Collapse>

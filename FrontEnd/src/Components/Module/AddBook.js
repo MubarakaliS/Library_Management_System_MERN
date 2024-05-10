@@ -16,8 +16,7 @@ const AddBook = () => {
 
             <Row style={{ "height": "100%",marginRight:'0px' }} className='gap-1'>
                 <Col className='col-2 col-md-4' style={{ "height": "100%"}}>
-                    {/* <Sidebar onItemClick={handleItemClick} />
-           */}
+                    
                     <SideBarItem />
                 </Col>
                 <Col className='col-9 col-md-7' style={{ "height": "100%"}}>

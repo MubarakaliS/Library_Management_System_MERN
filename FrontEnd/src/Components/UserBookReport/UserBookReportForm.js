@@ -1,7 +1,5 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Form } from 'react-bootstrap';
-// import BookReportUpdate from './BookReportUpdate';
 import { useEffect, useState } from 'react';
 
 import { useDispatch, useSelector } from 'react-redux';
@@ -10,7 +8,7 @@ import { getBookFromServer } from '../../Slice/BookSlice';
 
 const UserBookReportForm = () => {
 
-    const { bookList, error, searchBookTitle } = useSelector((state) => state.books)
+    const { bookList, error } = useSelector((state) => state.books)
     const [searchTitle, setSearchTitle] = useState("")
     const [currentPage, setCurrentPage] = useState(1);
     const [booksPerPage] = useState(5);

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Table from 'react-bootstrap/Table';
 import { useDispatch, useSelector } from 'react-redux';
 import { Form, Button, Card } from 'react-bootstrap';
 import BookReportUpdate from './BookReportUpdate';

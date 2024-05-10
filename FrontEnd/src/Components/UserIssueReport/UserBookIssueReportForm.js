@@ -34,12 +34,9 @@ const UserBookIssueReportForm = () => {
         );
     }
 
-    console.log(userInfo);
 
     const regNo = userInfo.userRegisterNo;
-    console.log(typeof regNo)
     const particularUser = issueBookList.filter((user) => user.registerNo === regNo);
-    console.log('particularUser', particularUser);
 
     const getBookDetailsByISBN = (isbn) => {
         const bookTitle = bookList.find((book) => book.isbn === isbn);

@@ -1,6 +1,6 @@
 import React from 'react'
-import './SideNavUser.css'
-import { Navigate, useNavigate } from 'react-router-dom';
+import '../styles/SideNavUser.css'
+import {  useNavigate } from 'react-router-dom';
 const SideBarItemUser = ({ onItemClick }) => {
     const navigate = useNavigate();
     const handleUserAccount = (item) => {
